@@ -1,0 +1,83 @@
+/* RESET Y VARIABLES GLOBALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    scroll-behavior: smooth; /* Desplazamiento suave dentro de la web */
+}
+
+/* OBLIGATORIO: Cada sección ocupa mínimo 1 pantalla */
+.full-screen {
+    min-height: 100vh;
+    padding: 80px 20px; /* Espacio para que el header fijo no tape el título */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HEADER */
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a202c;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #74b9ff;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #74b9ff;
+}
+
+/* FOOTER */
+.main-footer {
+    background-color: #1a202c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MEDIA QUERIES GLOBALES (Desktop) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simplificación para Celular */
+    }
+}

@@ -1,0 +1,31 @@
+.section-home {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    color: white;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/*-----------80% DE ANCHO y MINIMO 1/3 DE ALTO----------*/
+
+.hero-img {
+    width: 80%;
+    min-height: 33.33vh; 
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+@media (min-width: 1024px) {
+    .home-content h1 {
+        font-size: 4rem;
+    }
+}
